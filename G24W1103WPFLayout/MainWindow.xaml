@@ -5,25 +5,59 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:G24W1103WPFLayout"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Layout" Height="450" Width="400">
     <Border Padding="5" Background="LightGray">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="2*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Button Content="버튼 1" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"></Button>
-            <Button Content="버튼 3" Grid.Row="0" Grid.Column="2" Grid.RowSpan="2"></Button>
-            <Button Content="버튼 4" Grid.Row="0" Grid.Column="3"></Button>
-            <Button Content="버튼 5" Grid.Row="1" Grid.Column="0"></Button>
-            <Button Content="버튼 6" Grid.Row="1" Grid.Column="1"></Button>
-            <Button Content="버튼 8" Grid.Row="1" Grid.Column="3"></Button>
-        </Grid>
+        <ScrollViewer HorizontalScrollBarVisibility="Visible">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" Height="100">
+                    <!--<Rectangle Fill="DeepPink" Width="80" Height="80" Margin="10"/>-->
+                    <Image Width="80" Height="80" Margin="10" Source="https://picsum.photos/80/80?random=1"/>
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBlock FontSize="25">사랑은 늘 도망가</TextBlock>
+                        <TextBlock FontSize="20">임영웅</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="100">
+                    <!--<Rectangle Fill="DeepPink" Width="80" Height="80" Margin="10"/>-->
+                    <Image Width="80" Height="80" Margin="10" Source="https://picsum.photos/80/80?random=2"/>
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBlock FontSize="25">애인있어요</TextBlock>
+                        <TextBlock FontSize="20">이은미</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="100">
+                    <!--<Rectangle Fill="DeepPink" Width="80" Height="80" Margin="10"/>-->
+                    <Image Width="80" Height="80" Margin="10" Source="https://picsum.photos/80/80?random=3"/>
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBlock FontSize="25">소주 한 잔</TextBlock>
+                        <TextBlock FontSize="20">임창정</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="100">
+                    <!--<Rectangle Fill="DeepPink" Width="80" Height="80" Margin="10"/>-->
+                    <Image Width="80" Height="80" Margin="10" Source="https://picsum.photos/80/80?random=4"/>
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBlock FontSize="25">사랑에 연습이 있었다면</TextBlock>
+                        <TextBlock FontSize="20">임재현</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="100">
+                    <!--<Rectangle Fill="DeepPink" Width="80" Height="80" Margin="10"/>-->
+                    <Image Width="80" Height="80" Margin="10" Source="https://picsum.photos/80/80?random=5"/>
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBlock FontSize="25">다시 사랑한다면</TextBlock>
+                        <TextBlock FontSize="20">김필</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="100">
+                    <!--<Rectangle Fill="DeepPink" Width="80" Height="80" Margin="10"/>-->
+                    <Image Width="80" Height="80" Margin="10" Source="https://picsum.photos/80/80?random=6"/>
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBlock FontSize="25">Monologue</TextBlock>
+                        <TextBlock FontSize="20">테이</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
     </Border>
 </Window>
