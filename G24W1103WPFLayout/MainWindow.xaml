@@ -7,17 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Border Padding="5" Background="LightGray">
-        <DockPanel>
-            <Button Content="왼쪽" DockPanel.Dock="Left"/>
-            <Button Content="위" DockPanel.Dock="Right"/>
-            <Button Content="아래" DockPanel.Dock="Bottom"/>
-            <Button Content="오른" DockPanel.Dock="Top"/>
-            <UniformGrid Rows="1">
-                <Button Content="버튼 5"/>
-                <Button Content="버튼 6"/>
-                <Button Content="버튼 7"/>
-                <Button Content="버튼 8"/>
-            </UniformGrid>
-        </DockPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Content="버튼 1" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"></Button>
+            <Button Content="버튼 3" Grid.Row="0" Grid.Column="2" Grid.RowSpan="2"></Button>
+            <Button Content="버튼 4" Grid.Row="0" Grid.Column="3"></Button>
+            <Button Content="버튼 5" Grid.Row="1" Grid.Column="0"></Button>
+            <Button Content="버튼 6" Grid.Row="1" Grid.Column="1"></Button>
+            <Button Content="버튼 8" Grid.Row="1" Grid.Column="3"></Button>
+        </Grid>
     </Border>
 </Window>
