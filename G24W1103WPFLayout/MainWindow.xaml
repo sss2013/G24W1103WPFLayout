@@ -6,20 +6,18 @@
         xmlns:local="clr-namespace:G24W1103WPFLayout"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-
-        <StackPanel>
-        <Button Content="눌러주세요1"/>
-        <Button Content="눌러주세요2"/>
-        <StackPanel Orientation="Horizontal">
-        <Label x:Name="MyLabel" Content="안녕하세요" FontWeight="bold"></Label>
-        <Button Content="인사"/>
-        </StackPanel>
-        <TextBlock Text="WPF LayOut" HorizontalAlignment="Center" FontSize="22"></TextBlock>
-        <UniformGrid Rows="1">
-            <Button Content="버튼 1" Padding="10"/>
-            <Button Content="버튼 2" Margin="0 0 10 10"/>
-            <Button Content="버튼 3"/>
-        </UniformGrid>
-    </StackPanel>
-  
+    <Border Padding="5" Background="LightGray">
+        <DockPanel>
+            <Button Content="왼쪽" DockPanel.Dock="Left"/>
+            <Button Content="위" DockPanel.Dock="Right"/>
+            <Button Content="아래" DockPanel.Dock="Bottom"/>
+            <Button Content="오른" DockPanel.Dock="Top"/>
+            <UniformGrid Rows="1">
+                <Button Content="버튼 5"/>
+                <Button Content="버튼 6"/>
+                <Button Content="버튼 7"/>
+                <Button Content="버튼 8"/>
+            </UniformGrid>
+        </DockPanel>
+    </Border>
 </Window>
